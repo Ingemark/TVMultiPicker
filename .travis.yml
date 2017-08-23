@@ -1,0 +1,11 @@
+osx_image: xcode8
+language: objective-c
+xcode_workspace: TVMultiPicker.xcworkspace
+xcode_scheme: TVMultiPicker
+script:
+  - xcodebuild \
+    -workspace TVMultiPicker.xcworkspace \
+    -scheme TVMultiPicker \
+    -sdk appletvsimulator10.2 \
+    -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=10.2' \
+    test

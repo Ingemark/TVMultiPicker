@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19D16DC1D82CE1EE3098B67C /* Pods_TVMultiPickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EECF6C194F90536CF3EC64D /* Pods_TVMultiPickerDemo.framework */; };
+		9748EC7E1F387F0B002FC776 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748EC7D1F387F0B002FC776 /* UIColor+Colors.swift */; };
+		97A91FE61F4AE4DC00A75E1E /* TVMultiPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C372D31F337834009BFB3B /* TVMultiPicker.framework */; };
+		97A920F71F4B1C0B00A75E1E /* TVMultiPicker.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 97C372D31F337834009BFB3B /* TVMultiPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		97C372E21F3378BE009BFB3B /* HorizontalStringCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C372DF1F3378BE009BFB3B /* HorizontalStringCollectionView.swift */; };
+		97C372E31F3378BE009BFB3B /* HorizontalStringCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C372E01F3378BE009BFB3B /* HorizontalStringCollectionViewCell.swift */; };
+		97C372E41F3378BE009BFB3B /* HorizontalStringCollectionUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C372E11F3378BE009BFB3B /* HorizontalStringCollectionUtilities.swift */; };
+		97C372E81F3378DA009BFB3B /* MultiPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C372E61F3378DA009BFB3B /* MultiPickerViewController.swift */; };
+		97C372E91F3378DA009BFB3B /* MultiPickerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C372E71F3378DA009BFB3B /* MultiPickerConfiguration.swift */; };
+		97C372EE1F337904009BFB3B /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C372EC1F337904009BFB3B /* DatePickerViewController.swift */; };
+		97C372EF1F337904009BFB3B /* DatePickerUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C372ED1F337904009BFB3B /* DatePickerUtilities.swift */; };
+		97EF052B1F46FDB00023643B /* MultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C372F01F337911009BFB3B /* MultiPicker.swift */; };
+		97EF05571F47397D0023643B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF05561F47397D0023643B /* AppDelegate.swift */; };
+		97EF05591F47397D0023643B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF05581F47397D0023643B /* MainViewController.swift */; };
+		97EF055E1F47397E0023643B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EF055D1F47397E0023643B /* Assets.xcassets */; };
+		BF29AB19EFD851B20D426008 /* Pods_TVMultiPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0754A592FD610C870292F5 /* Pods_TVMultiPicker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97EF05711F473D4E0023643B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C372CA1F337834009BFB3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97C372D21F337834009BFB3B;
+			remoteInfo = MultiPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97A920F61F4B1BFF00A75E1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				97A920F71F4B1C0B00A75E1E /* TVMultiPicker.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0EECF6C194F90536CF3EC64D /* Pods_TVMultiPickerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVMultiPickerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1991D626A8AFA35793FCF6E0 /* Pods_TVMultiPickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVMultiPickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0754A592FD610C870292F5 /* Pods_TVMultiPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVMultiPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		252BC4E2A9DAFBC1F3500632 /* Pods-TVMultiPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMultiPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVMultiPicker/Pods-TVMultiPicker.release.xcconfig"; sourceTree = "<group>"; };
+		3430309DE6E4B09057F73768 /* Pods-TVMultiPickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMultiPickerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVMultiPickerTests/Pods-TVMultiPickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3EF1751DEBD9CDA075874FFD /* Pods-TVMultiPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMultiPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVMultiPicker/Pods-TVMultiPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		8270A060659D877A13566A73 /* Pods-TVMultiPickerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMultiPickerDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVMultiPickerDemoUITests/Pods-TVMultiPickerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		842E3884F692473510BF0645 /* Pods-TVMultiPickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMultiPickerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVMultiPickerDemo/Pods-TVMultiPickerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8A333D172FCCAB2DF9A4D034 /* Pods-TVMultiPickerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMultiPickerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVMultiPickerDemo/Pods-TVMultiPickerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		944CA185D0210CE3432C60BC /* Pods-TVMultiPickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMultiPickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVMultiPickerTests/Pods-TVMultiPickerTests.release.xcconfig"; sourceTree = "<group>"; };
+		9748EC7D1F387F0B002FC776 /* UIColor+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
+		9748EC851F388A39002FC776 /* MultiPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPickerTests.swift; sourceTree = "<group>"; };
+		9748EC871F388A39002FC776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B6C6371F4AD68100BFC7A4 /* MultiPickerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPickerDemoUITests.swift; sourceTree = "<group>"; };
+		97B6C6391F4AD68100BFC7A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97C372D31F337834009BFB3B /* TVMultiPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TVMultiPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C372D71F337834009BFB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97C372DF1F3378BE009BFB3B /* HorizontalStringCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalStringCollectionView.swift; sourceTree = "<group>"; };
+		97C372E01F3378BE009BFB3B /* HorizontalStringCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalStringCollectionViewCell.swift; sourceTree = "<group>"; };
+		97C372E11F3378BE009BFB3B /* HorizontalStringCollectionUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalStringCollectionUtilities.swift; sourceTree = "<group>"; };
+		97C372E61F3378DA009BFB3B /* MultiPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPickerViewController.swift; sourceTree = "<group>"; };
+		97C372E71F3378DA009BFB3B /* MultiPickerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPickerConfiguration.swift; sourceTree = "<group>"; };
+		97C372EC1F337904009BFB3B /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		97C372ED1F337904009BFB3B /* DatePickerUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerUtilities.swift; sourceTree = "<group>"; };
+		97C372F01F337911009BFB3B /* MultiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPicker.swift; sourceTree = "<group>"; };
+		97EF052C1F47198D0023643B /* DateUtilitiesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtilitiesTests.swift; sourceTree = "<group>"; };
+		97EF052E1F4719E40023643B /* DatePickerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTests.swift; sourceTree = "<group>"; };
+		97EF05541F47397D0023643B /* TVMultiPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVMultiPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EF05561F47397D0023643B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97EF05581F47397D0023643B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		97EF055D1F47397E0023643B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97EF055F1F47397E0023643B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03438347B76C84758333166 /* Pods_TVMultiPickerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVMultiPickerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3FB2316FAB40FD03161602 /* Pods-TVMultiPickerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMultiPickerDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVMultiPickerDemoUITests/Pods-TVMultiPickerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97C372CF1F337834009BFB3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF29AB19EFD851B20D426008 /* Pods_TVMultiPicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EF05511F47397D0023643B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A91FE61F4AE4DC00A75E1E /* TVMultiPicker.framework in Frameworks */,
+				19D16DC1D82CE1EE3098B67C /* Pods_TVMultiPickerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B2DECBBC1524EA5C56DE206 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EF1751DEBD9CDA075874FFD /* Pods-TVMultiPicker.debug.xcconfig */,
+				252BC4E2A9DAFBC1F3500632 /* Pods-TVMultiPicker.release.xcconfig */,
+				8A333D172FCCAB2DF9A4D034 /* Pods-TVMultiPickerDemo.debug.xcconfig */,
+				842E3884F692473510BF0645 /* Pods-TVMultiPickerDemo.release.xcconfig */,
+				8270A060659D877A13566A73 /* Pods-TVMultiPickerDemoUITests.debug.xcconfig */,
+				EA3FB2316FAB40FD03161602 /* Pods-TVMultiPickerDemoUITests.release.xcconfig */,
+				3430309DE6E4B09057F73768 /* Pods-TVMultiPickerTests.debug.xcconfig */,
+				944CA185D0210CE3432C60BC /* Pods-TVMultiPickerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2226720070DD1EBEC09E050E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E0754A592FD610C870292F5 /* Pods_TVMultiPicker.framework */,
+				0EECF6C194F90536CF3EC64D /* Pods_TVMultiPickerDemo.framework */,
+				D03438347B76C84758333166 /* Pods_TVMultiPickerDemoUITests.framework */,
+				1991D626A8AFA35793FCF6E0 /* Pods_TVMultiPickerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9748EC7C1F387EFF002FC776 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9748EC7D1F387F0B002FC776 /* UIColor+Colors.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		9748EC841F388A39002FC776 /* TVMultiPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9748EC851F388A39002FC776 /* MultiPickerTests.swift */,
+				97EF052E1F4719E40023643B /* DatePickerTests.swift */,
+				97EF052C1F47198D0023643B /* DateUtilitiesTests.swift */,
+				9748EC871F388A39002FC776 /* Info.plist */,
+			);
+			path = TVMultiPickerTests;
+			sourceTree = "<group>";
+		};
+		97B6C6361F4AD68100BFC7A4 /* TVMultiPickerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97B6C6371F4AD68100BFC7A4 /* MultiPickerDemoUITests.swift */,
+				97B6C6391F4AD68100BFC7A4 /* Info.plist */,
+			);
+			path = TVMultiPickerDemoUITests;
+			sourceTree = "<group>";
+		};
+		97C372C91F337834009BFB3B = {
+			isa = PBXGroup;
+			children = (
+				97C372D51F337834009BFB3B /* TVMultiPicker */,
+				9748EC841F388A39002FC776 /* TVMultiPickerTests */,
+				97EF05551F47397D0023643B /* TVMultiPickerDemo */,
+				97B6C6361F4AD68100BFC7A4 /* TVMultiPickerDemoUITests */,
+				97C372D41F337834009BFB3B /* Products */,
+				1B2DECBBC1524EA5C56DE206 /* Pods */,
+				2226720070DD1EBEC09E050E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		97C372D41F337834009BFB3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97C372D31F337834009BFB3B /* TVMultiPicker.framework */,
+				97EF05541F47397D0023643B /* TVMultiPickerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97C372D51F337834009BFB3B /* TVMultiPicker */ = {
+			isa = PBXGroup;
+			children = (
+				97C372F01F337911009BFB3B /* MultiPicker.swift */,
+				97C372E51F3378CE009BFB3B /* Core */,
+				97C372EA1F3378EC009BFB3B /* Components */,
+				9748EC7C1F387EFF002FC776 /* Extensions */,
+				97C372D71F337834009BFB3B /* Info.plist */,
+			);
+			path = TVMultiPicker;
+			sourceTree = "<group>";
+		};
+		97C372DE1F33785D009BFB3B /* HorizontalStringCollection */ = {
+			isa = PBXGroup;
+			children = (
+				97C372DF1F3378BE009BFB3B /* HorizontalStringCollectionView.swift */,
+				97C372E01F3378BE009BFB3B /* HorizontalStringCollectionViewCell.swift */,
+				97C372E11F3378BE009BFB3B /* HorizontalStringCollectionUtilities.swift */,
+			);
+			name = HorizontalStringCollection;
+			sourceTree = "<group>";
+		};
+		97C372E51F3378CE009BFB3B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				97C372E61F3378DA009BFB3B /* MultiPickerViewController.swift */,
+				97C372E71F3378DA009BFB3B /* MultiPickerConfiguration.swift */,
+				97C372DE1F33785D009BFB3B /* HorizontalStringCollection */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		97C372EA1F3378EC009BFB3B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				97C372EB1F3378F6009BFB3B /* DatePicker */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		97C372EB1F3378F6009BFB3B /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				97C372EC1F337904009BFB3B /* DatePickerViewController.swift */,
+				97C372ED1F337904009BFB3B /* DatePickerUtilities.swift */,
+			);
+			name = DatePicker;
+			sourceTree = "<group>";
+		};
+		97EF05551F47397D0023643B /* TVMultiPickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				97EF05561F47397D0023643B /* AppDelegate.swift */,
+				97EF05581F47397D0023643B /* MainViewController.swift */,
+				97EF055D1F47397E0023643B /* Assets.xcassets */,
+				97EF055F1F47397E0023643B /* Info.plist */,
+			);
+			path = TVMultiPickerDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		97C372D01F337834009BFB3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		97C372D21F337834009BFB3B /* TVMultiPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C372DB1F337834009BFB3B /* Build configuration list for PBXNativeTarget "TVMultiPicker" */;
+			buildPhases = (
+				FB59BC13060B1D654A8E2F03 /* [CP] Check Pods Manifest.lock */,
+				97C372CE1F337834009BFB3B /* Sources */,
+				97C372CF1F337834009BFB3B /* Frameworks */,
+				97C372D01F337834009BFB3B /* Headers */,
+				97C372D11F337834009BFB3B /* Resources */,
+				7F206082BBBABDE3BE168290 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVMultiPicker;
+			productName = MultiPicker;
+			productReference = 97C372D31F337834009BFB3B /* TVMultiPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97EF05531F47397D0023643B /* TVMultiPickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97EF056B1F47397E0023643B /* Build configuration list for PBXNativeTarget "TVMultiPickerDemo" */;
+			buildPhases = (
+				536B70F6D0D7574A29B360D5 /* [CP] Check Pods Manifest.lock */,
+				97EF05501F47397D0023643B /* Sources */,
+				97EF05511F47397D0023643B /* Frameworks */,
+				97EF05521F47397D0023643B /* Resources */,
+				600C5424EE4027450F17F6B3 /* [CP] Embed Pods Frameworks */,
+				EFBA84ACB6D020128EBE23DE /* [CP] Copy Pods Resources */,
+				97A920F61F4B1BFF00A75E1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97EF05721F473D4E0023643B /* PBXTargetDependency */,
+			);
+			name = TVMultiPickerDemo;
+			productName = MultiPickerDemo;
+			productReference = 97EF05541F47397D0023643B /* TVMultiPickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97C372CA1F337834009BFB3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Ingemark;
+				TargetAttributes = {
+					97C372D21F337834009BFB3B = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					97EF05531F47397D0023643B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 67F9L7ZQQV;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 97C372CD1F337834009BFB3B /* Build configuration list for PBXProject "TVMultiPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97C372C91F337834009BFB3B;
+			productRefGroup = 97C372D41F337834009BFB3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97C372D21F337834009BFB3B /* TVMultiPicker */,
+				97EF05531F47397D0023643B /* TVMultiPickerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97C372D11F337834009BFB3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EF05521F47397D0023643B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EF055E1F47397E0023643B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		536B70F6D0D7574A29B360D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		600C5424EE4027450F17F6B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVMultiPickerDemo/Pods-TVMultiPickerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F206082BBBABDE3BE168290 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVMultiPicker/Pods-TVMultiPicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFBA84ACB6D020128EBE23DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVMultiPickerDemo/Pods-TVMultiPickerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB59BC13060B1D654A8E2F03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97C372CE1F337834009BFB3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C372E21F3378BE009BFB3B /* HorizontalStringCollectionView.swift in Sources */,
+				97C372E41F3378BE009BFB3B /* HorizontalStringCollectionUtilities.swift in Sources */,
+				97EF052B1F46FDB00023643B /* MultiPicker.swift in Sources */,
+				97C372EE1F337904009BFB3B /* DatePickerViewController.swift in Sources */,
+				97C372E81F3378DA009BFB3B /* MultiPickerViewController.swift in Sources */,
+				97C372E91F3378DA009BFB3B /* MultiPickerConfiguration.swift in Sources */,
+				97C372EF1F337904009BFB3B /* DatePickerUtilities.swift in Sources */,
+				9748EC7E1F387F0B002FC776 /* UIColor+Colors.swift in Sources */,
+				97C372E31F3378BE009BFB3B /* HorizontalStringCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EF05501F47397D0023643B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EF05591F47397D0023643B /* MainViewController.swift in Sources */,
+				97EF05571F47397D0023643B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97EF05721F473D4E0023643B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97C372D21F337834009BFB3B /* TVMultiPicker */;
+			targetProxy = 97EF05711F473D4E0023643B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		97C372D91F337834009BFB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97C372DA1F337834009BFB3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97C372DC1F337834009BFB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF1751DEBD9CDA075874FFD /* Pods-TVMultiPicker.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TVMultiPicker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ingemark.TVMultiPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		97C372DD1F337834009BFB3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252BC4E2A9DAFBC1F3500632 /* Pods-TVMultiPicker.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TVMultiPicker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ingemark.TVMultiPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		97EF056C1F47397E0023643B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A333D172FCCAB2DF9A4D034 /* Pods-TVMultiPickerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 67F9L7ZQQV;
+				INFOPLIST_FILE = TVMultiPickerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ingemark.TVMultiPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		97EF056D1F47397E0023643B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 842E3884F692473510BF0645 /* Pods-TVMultiPickerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 67F9L7ZQQV;
+				INFOPLIST_FILE = TVMultiPickerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ingemark.TVMultiPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97C372CD1F337834009BFB3B /* Build configuration list for PBXProject "TVMultiPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C372D91F337834009BFB3B /* Debug */,
+				97C372DA1F337834009BFB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C372DB1F337834009BFB3B /* Build configuration list for PBXNativeTarget "TVMultiPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C372DC1F337834009BFB3B /* Debug */,
+				97C372DD1F337834009BFB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97EF056B1F47397E0023643B /* Build configuration list for PBXNativeTarget "TVMultiPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EF056C1F47397E0023643B /* Debug */,
+				97EF056D1F47397E0023643B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97C372CA1F337834009BFB3B /* Project object */;
+}
