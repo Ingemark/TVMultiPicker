@@ -38,7 +38,7 @@ User has to provide `ProcessDataAction: ([(index: Int, value: String)]) -> T?` a
 value from given array of selected items in multiple pickers.
 
 Pickers are defined in a following way:
-```
+```swift
 let examplePicker = PickerDefinition(
     data: ["Item 1", "Item 2"],    // Items displayed in horizontal list
     cellWidth: 100,                // Width of each item cell (can be nil for auto-calculated width!)
@@ -54,7 +54,7 @@ First one will be gender picker while second one will represent country picker.
 In the end we want to get picked value in `String` format: "Male, Croatia".
 After user has picked value, we'll dismiss picker and print value to console.
 
-```
+```swift
 let pickerVC = MultiPickerViewController<String>(
     [
         PickerDefinition(
@@ -88,7 +88,7 @@ let pickerVC = MultiPickerViewController<String>(
 
 Library also contains pre-made date picker. It can be used in following way:
 
-```
+```swift
 let picker = MultiPicker.datePicker(
     startYear: 1900,            // Lower year bound
     initialYear: 1990,          // Initially focused year
