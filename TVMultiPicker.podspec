@@ -18,5 +18,5 @@ Contains pre-configured date picker. Supports user defined style configuration.
   
   s.source_files = 'TVMultiPicker/*'
 
-  s.dependency 'SnapKit'
+  s.dependency 'SnapKit', '~> 3.0'
 end
