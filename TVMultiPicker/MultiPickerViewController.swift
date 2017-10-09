@@ -76,12 +76,7 @@ open class MultiPickerViewController<PickedValueType>: UIViewController {
         addPickers()
         createAndAddButton()
         addFocusGuide()
-    }
-    
-    override open func viewDidLayoutSubviews() {
-        pickers.forEach { $0.updateFocus() }
-        pickers.forEach { $0.fade() }
-        pickers[initialPickerIndex].updateFocus()
+        setInitialState()
     }
     
     
@@ -192,6 +187,12 @@ extension MultiPickerViewController {
         fg.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         fg.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         fg.preferredFocusedView = button
+    }
+    
+    fileprivate func setInitialState() {
+        pickers.forEach { $0.updateFocus() }
+        pickers.forEach { $0.fade() }
+        pickers[initialPickerIndex].updateFocus()
     }
 
 }
