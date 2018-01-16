@@ -122,7 +122,7 @@ open class MultiPickerViewController<PickedValueType>: UIViewController {
         return processDataAction?(data)
     }
     
-    func buttonTapepd() {
+    @objc func buttonTapepd() {
         guard
             let pickedValue = getPickedValue()
             else { return }
