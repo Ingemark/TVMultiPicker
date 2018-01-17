@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TVMultiPicker'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'Generic view with arbitrary number of horizontal pickers.'
 
   s.description      = <<-DESC
