@@ -79,6 +79,11 @@ open class MultiPickerViewController<PickedValueType>: UIViewController {
         setInitialState()
     }
     
+    override open func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        pickers[initialPickerIndex].updateFocus()
+    }
+    
     
     /// Initializes and configures new multi-picker.
     ///
