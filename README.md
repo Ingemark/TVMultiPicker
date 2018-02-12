@@ -19,10 +19,22 @@ Requirements
 Install
 ----
 
+### Swift 3
+
 ```
 # in your tvOS target
 use_frameworks!
-pod 'TVMultiPicker'
+pod 'TVMultiPicker', '~> 0.0.3'
+
+```
+
+### Swift 4
+
+```
+# in your tvOS target
+use_frameworks!
+pod 'TVMultiPicker', '~> 0.0.4'
+
 ```
 
 Usage
