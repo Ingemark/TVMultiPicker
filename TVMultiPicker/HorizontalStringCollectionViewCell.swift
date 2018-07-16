@@ -53,9 +53,10 @@ class HorizontalStringCollectionViewCell: UICollectionViewCell {
     
     private func addSubviews() {
         addSubview(textLabel)
-        textLabel.snp.makeConstraints { maker in
-            maker.centerX.centerY.equalToSuperview()
-        }
+        
+        textLabel.translatesAutoresizingMaskIntoConstraints = false
+        textLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        textLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
     
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {

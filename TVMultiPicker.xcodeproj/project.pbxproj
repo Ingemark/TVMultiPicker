@@ -264,7 +264,6 @@
 				97C372CF1F337834009BFB3B /* Frameworks */,
 				97C372D01F337834009BFB3B /* Headers */,
 				97C372D11F337834009BFB3B /* Resources */,
-				7F206082BBBABDE3BE168290 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,7 +283,6 @@
 				97EF05511F47397D0023643B /* Frameworks */,
 				97EF05521F47397D0023643B /* Resources */,
 				600C5424EE4027450F17F6B3 /* [CP] Embed Pods Frameworks */,
-				EFBA84ACB6D020128EBE23DE /* [CP] Copy Pods Resources */,
 				97A920F61F4B1BFF00A75E1E /* CopyFiles */,
 			);
 			buildRules = (
@@ -392,36 +390,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVMultiPickerDemo/Pods-TVMultiPickerDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F206082BBBABDE3BE168290 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVMultiPicker/Pods-TVMultiPicker-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EFBA84ACB6D020128EBE23DE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVMultiPickerDemo/Pods-TVMultiPickerDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FB59BC13060B1D654A8E2F03 /* [CP] Check Pods Manifest.lock */ = {
