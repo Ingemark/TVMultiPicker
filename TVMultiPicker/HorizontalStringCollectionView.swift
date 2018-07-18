@@ -117,7 +117,7 @@ public class HorizontalStringCollectionView: UICollectionView {
     }
 
     func clearAllCells() {
-        let horizontalCells = visibleCells.map { $0 as? HorizontalStringCollectionViewCell }.flatMap { $0 }
+        let horizontalCells = visibleCells.map { $0 as? HorizontalStringCollectionViewCell }.compactMap { $0 }
         horizontalCells.forEach {
             formatCell($0, focused: false)
             $0.setNeedsDisplay()

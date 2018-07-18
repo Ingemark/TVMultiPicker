@@ -24,7 +24,6 @@
 //  THE SOFTWARE.
 //
 import UIKit
-import SnapKit
 
 public struct PickerDefinition {
     
@@ -161,12 +160,13 @@ extension MultiPickerViewController {
         var offset = configuration.topOffset
         for picker in pickers {
             view.addSubview(picker)
-            picker.snp.makeConstraints { maker in
-                maker.top.equalToSuperview().offset(offset)
-                maker.width.equalTo(configuration.pickerWidth)
-                maker.height.equalTo(configuration.pickerHeight)
-                maker.centerX.equalToSuperview()
-            }
+            picker.translatesAutoresizingMaskIntoConstraints = false
+            
+            picker.topAnchor.constraint(equalTo: view.topAnchor, constant: offset).isActive = true
+            picker.widthAnchor.constraint(equalToConstant: configuration.pickerWidth).isActive = true
+            picker.heightAnchor.constraint(equalToConstant: configuration.pickerHeight).isActive = true
+            picker.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+            
             offset += (configuration.pickerHeight + configuration.offsetBetweenPickers)
         }
     }
@@ -176,10 +176,11 @@ extension MultiPickerViewController {
         button.setTitle(configuration.doneButtonText, for: .normal)
         
         view.addSubview(button)
-        button.snp.makeConstraints { maker in
-            maker.centerX.equalToSuperview()
-            maker.bottom.equalToSuperview().offset(-configuration.doneButtonBottomOffset)
-        }
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: CGFloat(-configuration.doneButtonBottomOffset)).isActive = true
+        
         button.addTarget(self, action: #selector(buttonTapepd), for: .primaryActionTriggered)
         self.button = button
     }

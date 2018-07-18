@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SnapKit
 import TVMultiPicker
 
 class MainViewController: UIViewController {
@@ -27,9 +26,9 @@ class MainViewController: UIViewController {
     
     private func addButton() {
         view.addSubview(openPickerButton)
-        openPickerButton.snp.makeConstraints { make in
-            make.centerX.centerY.equalToSuperview()
-        }
+        openPickerButton.translatesAutoresizingMaskIntoConstraints = false
+        openPickerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        openPickerButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
     @objc
