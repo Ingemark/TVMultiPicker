@@ -17,6 +17,4 @@ Contains pre-configured date picker. Supports user defined style configuration.
   s.platform     = :tvos, "9.0"
   
   s.source_files = 'TVMultiPicker/*'
-
-  s.dependency 'SnapKit', '~> 4.0.0'
 end
