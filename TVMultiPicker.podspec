@@ -16,5 +16,5 @@ Contains pre-configured date picker. Supports user defined style configuration.
 
   s.platform     = :tvos, "9.0"
   
-  s.source_files = 'TVMultiPicker/*'
+  s.source_files = 'TVMultiPicker/*.swift'
 end
