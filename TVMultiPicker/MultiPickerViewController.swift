@@ -192,7 +192,7 @@ extension MultiPickerViewController {
         fg.heightAnchor.constraint(equalToConstant: 20).isActive = true
         fg.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         fg.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        fg.preferredFocusedView = button
+        if let btn = button { fg.preferredFocusEnvironments = [btn] }
     }
     
     fileprivate func setInitialState() {

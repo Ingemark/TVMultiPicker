@@ -14,7 +14,7 @@ Contains pre-configured date picker. Supports user defined style configuration.
   s.author           = { 'Filip Dujmusic' => 'filip.dujmusic@ingemark.com' }
   s.source           = { :git => 'https://github.com/Ingemark/TVMultiPicker.git', :tag => s.version.to_s }
 
-  s.platform     = :tvos, "9.0"
+  s.platform     = :tvos, "10.2"
   
   s.source_files = 'TVMultiPicker/*'
 end
