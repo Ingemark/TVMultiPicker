@@ -17,4 +17,5 @@ Contains pre-configured date picker. Supports user defined style configuration.
   s.platform     = :tvos, "10.2"
   
   s.source_files = 'TVMultiPicker/*'
+  s.exclude_files = 'TVMultiPicker/**/*.plist'
 end
