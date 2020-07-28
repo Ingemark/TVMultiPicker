@@ -27,29 +27,29 @@
 import Foundation
 
 struct DatePickerUtilities { private init() { }
-    
+
     static func getDateFromComponents(components: [String]) -> Date? {
         let year    = components[0]
         let month   = components[1]
         let day     = components[2]
         let dateString = day + " " + month + " " + year
-        
+
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "d M yyyy"
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
         dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
-        
+
         guard
             let date = dateFormatter.date(from: dateString)
         else {
             print("Could not convert components: \(components) to Date!")
             return nil
         }
-        
+
         return date
     }
-    
-    
+
+
     static func getDaysForYearMonth(for date: Date) -> [String] {
         guard
             let daysRange = Calendar.current.range(of: .day, in: .month, for: date)
@@ -57,9 +57,9 @@ struct DatePickerUtilities { private init() { }
         let daysArray = Array(daysRange.lowerBound ..< daysRange.upperBound).map { "\($0)" }
         return daysArray
     }
-    
+
     static func getYearPicker(startYear: Int, initialYear: Int) -> PickerDefinition {
-        let currentYear = Calendar.current.component(.year, from: Date())
+        let currentYear = Calendar.current.component(.year, from: Date()) + 10
         let data = (startYear ... currentYear).map { "\($0)" }
         let definition = PickerDefinition(
             data: data,
@@ -69,7 +69,7 @@ struct DatePickerUtilities { private init() { }
         )
         return definition
     }
-    
+
     static func getMonthPicker() -> PickerDefinition {
         let data = [
             "Jan",
@@ -93,7 +93,7 @@ struct DatePickerUtilities { private init() { }
         )
         return definition
     }
-    
+
     static func getDayPicker() -> PickerDefinition {
         let data = (1...30).map { "\($0)" }
         let definition = PickerDefinition(
@@ -104,5 +104,5 @@ struct DatePickerUtilities { private init() { }
         )
         return definition
     }
-    
+
 }
