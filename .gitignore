@@ -76,8 +76,6 @@ fastlane/test_output
 
 ## Build generated
 
-## Various settings
-
 ## Other
 *.xccheckout
 *.xcscmblueprint
